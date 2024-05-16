@@ -14,9 +14,9 @@ public class LoginController {
     @PostMapping("/login")
     public String login(@RequestBody User user) {
         if (user.getEmail().equals("email") && user.getPassword().equals("password")) {
-            return "Login berhasil!";
+            return "Login berhasil";
         } else {
-            return "Login gagal!";
+            return "Login gagal";
         }
     }
 
